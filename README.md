@@ -9,10 +9,7 @@ Epigenetic modifications, including DNA methylation, RNA modifications, and prot
 
 🤖 Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT); Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
 
-### 🧠 Model description
-
-
-### 📁 EpiLingo Structure
+### 📁 Folder Structure
 ```
 EpiLingo/
 ├── dna_rna/                # DNA & RNA modification prediction (based on DNABERT)
@@ -27,3 +24,4 @@ EpiLingo/
 ├── requirements.txt        # Required packages
 └── README.md
 ```
+### 🧠 Model description
