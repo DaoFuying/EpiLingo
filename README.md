@@ -7,9 +7,7 @@ Epigenetic modifications, including DNA methylation, RNA modifications, and prot
 
 🌱 Plant-specific: Fine-tuned across 15 plant species with species-aware tokenization and embedding
 
-🤖 Transformer-based architecture:
-DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT)  
-Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
+🤖 Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT); Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
 
 ### 🧠 Model description
 
