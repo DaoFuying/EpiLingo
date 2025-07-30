@@ -42,7 +42,7 @@ cd dna_rna
 export KMER=6
 export MODEL_PATH=6-new-12w-0 #Download the pre-trained model in to a directory and unzip
 export DATA_PATH=data
-export OUTPUT_PATH=data
+export OUTPUT_PATH=data/model
 
 python run_finetune.py \
     --model_type dna \
@@ -69,9 +69,9 @@ python run_finetune.py \
 #(2) prediction based on fine-tuning model
 
 export KMER=6
-export MODEL_PATH=data
+export MODEL_PATH=data/model
 export DATA_PATH=data
-export PREDICTION_PATH=data
+export PREDICTION_PATH=data/prediction
 
 python run_finetune.py \
     --model_type dna \
