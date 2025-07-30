@@ -36,7 +36,9 @@ pip install -r requirements.txt --ignore-installed
 
 ```
 cd dna_rna
+
 #(1) Fine-tuning model based on pre-trained 6mer model
+
 export KMER=6
 export MODEL_PATH=6-new-12w-0 #Download the pre-trained model in to a directory and unzip
 export DATA_PATH=data
@@ -64,7 +66,8 @@ python run_finetune.py \
     --weight_decay 0.01 \
     --n_process 8
 
-#(1) prediction based on fine-tuning model
+#(2) prediction based on fine-tuning model
+
 export KMER=6
 export MODEL_PATH=data
 export DATA_PATH=data
@@ -84,8 +87,12 @@ python run_finetune.py \
     --n_process 48
 ```
 3. PTMs - Fine-tuning models and predictions:
-```
-pip install -r requirements.txt --ignore-installed
-```
+In the `ptm` directory, we provide a demonstration [notebook](ptm/ptm_Arabidopsis_thaliana_phosphorylation.ipynb) that showcases the usage of EpiLingo for PTM site prediction. Users can replace the example dataset with their own data to perform customized analyses.
 
-### 🧠 Model description
+### 📑 Citation and Contacts
+If you use our code, data, or models, please cite "EpiLingo: Large language model for highly multiplexed detection of multi-omics epigenetic modifications on single-base/residue resolution sequencing data", thank you very much. If you have any questions, please contact: fuying.dao@ntu.edu.sg.
+
+### 🙏 Acknowledgments
+This work was supported by the National Nature Scientific Foundation of China (62402089), Sichuan Science and Technology Program (2025ZNSFSC1465), and China Postdoctoral Science Foundation (2023TQ0047, GZC20230380). This research is also supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award No: AISG3-GV-2023-014) and by the Ministry of Education, Singapore, under its Academic Research Fund Tier 1 (RG38/23), both awarded to M.J.F. (PI).
+
+
