@@ -25,7 +25,7 @@ EpiLingo/
 └── README.md
 ```
 ### 🚀 How to Use (Detailed)
-1.You can clone this repository and install dependencies (recommended in a virtual environment):
+1. You can clone this repository and install dependencies (recommended in a virtual environment):
 ```
 git clone https://github.com/DaoFuying/EpiLingo.git
 cd EpiLingo
