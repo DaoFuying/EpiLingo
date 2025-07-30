@@ -3,11 +3,11 @@ Epigenetic modifications, including DNA methylation, RNA modifications, and prot
 
 ![image](workflow.png)
 ### 🔍 Key Features
-✅ Cross-layer coverage: Predicts DNA methylation (4mC, 6mA), RNA modifications (m6A, m5C, Ψ), and protein post-translational modifications (e.g., lysine lactylation, crotonylation, phosphorylation, etc.)
+Cross-layer coverage: Predicts DNA methylation (4mC, 6mA), RNA modifications (m6A, m5C, Ψ), and protein post-translational modifications (e.g., lysine lactylation, crotonylation, phosphorylation, etc.)
 
-🌱 Plant-specific: Fine-tuned across 15 plant species with species-aware tokenization and embedding
+Plant-specific: Fine-tuned across 15 plant species with species-aware tokenization and embedding
 
-🤖 Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT); Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
+Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT); Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
 
 ### 📁 Folder Structure
 ```
@@ -23,5 +23,10 @@ EpiLingo/
 ├── utils/                  # Shared preprocessing and evaluation functions
 ├── requirements.txt        # Required packages
 └── README.md
+```
+### 🚀 How to Use (Detailed)
+1. Install dependencies (recommended in a virtual environment):
+```
+pip install -r requirements.txt --ignore-installed
 ```
 ### 🧠 Model description
