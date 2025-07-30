@@ -25,8 +25,20 @@ EpiLingo/
 └── README.md
 ```
 ### 🚀 How to Use (Detailed)
-1. Install dependencies (recommended in a virtual environment):
+1.You can clone this repository and install dependencies (recommended in a virtual environment):
+```
+git clone https://github.com/DaoFuying/EpiLingo.git
+cd EpiLingo
+pip install -r requirements.txt --ignore-installed
+```
+
+2. DNA/RNA - Fine-tuning models and predictions:
 ```
 pip install -r requirements.txt --ignore-installed
 ```
+3. PTMs - Fine-tuning models and predictions:
+```
+pip install -r requirements.txt --ignore-installed
+```
+
 ### 🧠 Model description
