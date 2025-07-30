@@ -13,14 +13,14 @@ Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github
 ```
 EpiLingo/
 ├── dna_rna/                # DNA & RNA modification prediction (based on DNABERT)
-│   ├── run_dnarnamod.py    # Main training script
-│   ├── data/               # Contains benchmark datasets
-│   └── model/              # DNABERT finetuned weights
+│   ├── 6-new-12w-0/        # pre-trained model (6mer)
+│   ├── datasets/           # Contains benchmark datasets for DNA/RNA modification sites
+│   └── data/               # test data used to fine-tuning model and predictions
 ├── ptm/                    # PTM site prediction (based on ProteinBERT)
-│   ├── run_ptmmod.py       # Protein model training and evaluation
-│   ├── data/               # Protein sequence + label data
-│   └── model/              # ProteinBERT finetuned weights
-├── utils/                  # Shared preprocessing and evaluation functions
+│   ├── ptm_Arabidopsis_thaliana_phosphorylation.ipynb       # a demo to fine-tuning and predictions for PTMs
+│   ├── data/               # test data for PTM model train and predictions
+│   └── datasets/           # Contains benchmark datasets for PTMs
+├── scr/                    # Contains all DNABERT-dependent scripts
 ├── requirements.txt        # Required packages
 └── README.md
 ```
