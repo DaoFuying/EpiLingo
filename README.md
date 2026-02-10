@@ -9,6 +9,8 @@ Plant-specific: Fine-tuned across 15 plant species with species-aware tokenizati
 
 Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github.com/jerryji1993/DNABERT); Protein models based on [ProteinBERT](https://github.com/nadavbra/protein_bert)
 
+For detailed model configurations and hyperparameter settings, please refer to the Methods section of the manuscript.
+
 ### 📁 Folder Structure
 ```
 EpiLingo/
@@ -64,7 +66,7 @@ python EpiLingo_predict.py \
 
 ```
 3. PTMs - Fine-tuning models and predictions:
-In the `ptm` directory, we provide a demonstration [notebook](ptm/ptm_Arabidopsis_thaliana_phosphorylation.ipynb) that showcases the usage of EpiLingo for PTM site prediction. Users can replace the example dataset with their own data to perform customized analyses. For detailed model configurations and hyperparameter settings, please refer to the Methods section of the manuscript.
+In the `ptm` directory, we provide a demonstration [notebook](ptm/ptm_Arabidopsis_thaliana_phosphorylation.ipynb) that showcases the usage of EpiLingo for PTM site prediction. Users can replace the example dataset with their own data to perform customized analyses.
 
 ### 📑 Citation and Contacts
 If you use our code, data, or models, please cite "EpiLingo: Large language model for highly multiplexed detection of multi-omics epigenetic modifications on single-base/residue resolution sequencing data", thank you very much. If you have any questions, please contact: fuying.dao@ntu.edu.sg.
