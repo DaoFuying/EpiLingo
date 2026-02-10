@@ -15,7 +15,6 @@ EpiLingo/
 ├── dna_rna/                 # DNA & RNA modification prediction (based on DNABERT)
 │   ├── datasets/            # Contains benchmark datasets for DNA/RNA modification sites
 │   ├── data/                # test data used to fine-tuning model and predictions
-│   ├── benchmark/           # scripts for comparing different frameworks
 │   ├── EpiLingo_finetune.py # Fine-tuning the DNA/RNA modification site prediction model
 │   └── EpiLingo_predict.py  # prediction
 │
@@ -24,6 +23,7 @@ EpiLingo/
 │   ├── data/               # test data for PTM model train and predictions
 │   └── datasets/           # Contains benchmark datasets for PTMs
 ├── scr/                    # Contains all DNABERT-dependent scripts
+├── benchmark/              # scripts for comparing different frameworks
 ├── requirements.txt        # Required packages
 └── README.md
 ```
