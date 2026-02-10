@@ -22,6 +22,7 @@ EpiLingo/
 │   ├── ptm_Arabidopsis_thaliana_phosphorylation.ipynb       # a demo to fine-tuning and predictions for PTMs
 │   ├── data/               # test data for PTM model train and predictions
 │   └── datasets/           # Contains benchmark datasets for PTMs
+│
 ├── scr/                    # Contains all DNABERT-dependent scripts
 ├── benchmark/              # scripts for comparing different frameworks
 ├── requirements.txt        # Required packages
