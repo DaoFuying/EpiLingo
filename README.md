@@ -15,7 +15,7 @@ EpiLingo/
 ├── dna_rna/                 # DNA & RNA modification prediction (based on DNABERT)
 │   ├── datasets/            # Contains benchmark datasets for DNA/RNA modification sites
 │   ├── data/                # test data used to fine-tuning model and predictions
-│   ├── benchmark/           # Comparing different frameworks
+│   ├── benchmark/           # scripts for comparing different frameworks
 │   ├── EpiLingo_finetune.py # Fine-tuning the DNA/RNA modification site prediction model
 │   └── EpiLingo_predict.py  # prediction
 │
@@ -60,16 +60,6 @@ python EpiLingo_predict.py \
   --max_seq_length 41 \
   --batch_size 256
 
-#(3) benchmark
-
-export DATA_PATH=data/data_benchmark
-export OUTPUT_PATH=output/gpt
-
-python benchmark_bert_t5_gpt_llama.py.py \
-  --arch gpt \
-  --model_name_or_path zhihan1996/DNA_bert_6 \
-  --data_dir $DATA_PATH \
-  --output_dir $OUTPUT_PATH \
 
 ```
 3. PTMs - Fine-tuning models and predictions:
