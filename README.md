@@ -43,52 +43,24 @@ cd dna_rna
 
 #(1) Fine-tuning model based on pre-trained 6mer model
 
-export KMER=6
-export MODEL_PATH=6-new-12w-0 #Download the pre-trained model in to a directory and unzip
-export DATA_PATH=data
-export OUTPUT_PATH=data/model
-
-python run_finetune.py \
-    --model_type dna \
-    --tokenizer_name=dna$KMER \
-    --model_name_or_path $MODEL_PATH \
-    --task_name dnaprom \
-    --do_train \
-    --do_eval \
-    --data_dir $DATA_PATH \
-    --max_seq_length 41 \
-    --per_gpu_eval_batch_size=64   \
-    --per_gpu_train_batch_size=64   \
-    --learning_rate 0.0001 \
-    --num_train_epochs 5.0 \
-    --output_dir $OUTPUT_PATH \
-    --evaluate_during_training \
-    --logging_steps 100 \
-    --warmup_percent 0.1 \
-    --hidden_dropout_prob 0.1 \
-    --overwrite_output \
-    --weight_decay 0.01 \
-    --n_process 8
+python EpiLingo_finetune.py \
+  --backbone dnabert6 \
+  --data_dir data \
+  --output_dir model/ \
+  --use_lora \
+  --lora_target_modules query,key,value \
+  --learning_rate 2e-4 \
+  --num_train_epochs 5
 
 #(2) prediction based on fine-tuning model
 
-export KMER=6
-export MODEL_PATH=data/model
-export DATA_PATH=data
-export PREDICTION_PATH=data/prediction
+python EpiLingo_predict.py \
+  --model_dir model/ \
+  --input_tsv data/21days_Arabidopsis_6mA_pos_neg_balanced_all.tsv \
+  --output_csv output/21days_Arabidopsis_6mA_pos_neg_balancedALL_pred.csv \
+  --max_seq_length 41 \
+  --batch_size 256
 
-python run_finetune.py \
-    --model_type dna \
-    --tokenizer_name=dna$KMER \
-    --model_name_or_path $MODEL_PATH \
-    --task_name dnaprom \
-    --do_predict \
-    --data_dir $DATA_PATH  \
-    --max_seq_length 41 \
-    --per_gpu_pred_batch_size=128   \
-    --output_dir $MODEL_PATH \
-    --predict_dir $PREDICTION_PATH \
-    --n_process 48
 ```
 3. PTMs - Fine-tuning models and predictions:
 In the `ptm` directory, we provide a demonstration [notebook](ptm/ptm_Arabidopsis_thaliana_phosphorylation.ipynb) that showcases the usage of EpiLingo for PTM site prediction. Users can replace the example dataset with their own data to perform customized analyses.
