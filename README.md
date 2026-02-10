@@ -56,8 +56,8 @@ python EpiLingo_finetune.py \
 
 python EpiLingo_predict.py \
   --model_dir model/ \
-  --input_tsv data/21days_Arabidopsis_6mA_pos_neg_balanced_all.tsv \
-  --output_csv output/21days_Arabidopsis_6mA_pos_neg_balancedALL_pred.csv \
+  --input_tsv data/9days_Arabidopsis_6mA_pos_neg_balanced_all.tsv \
+  --output_csv output/9days_Arabidopsis_6mA_pos_neg_balancedALL_pred.csv \
   --max_seq_length 41 \
   --batch_size 256
 
