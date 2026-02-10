@@ -12,10 +12,14 @@ Transformer-based architecture: DNA/RNA models based on [DNABERT](https://github
 ### 📁 Folder Structure
 ```
 EpiLingo/
-├── dna_rna/                # DNA & RNA modification prediction (based on DNABERT)
-│   ├── 6-new-12w-0/        # pre-trained model (6mer)
-│   ├── datasets/           # Contains benchmark datasets for DNA/RNA modification sites
-│   └── data/               # test data used to fine-tuning model and predictions
+├── dna_rna/                 # DNA & RNA modification prediction (based on DNABERT)
+│   ├── datasets/            # Contains benchmark datasets for DNA/RNA modification sites
+│   ├── data/                # test data used to fine-tuning model and predictions
+│   ├── model/               # Save the fine-tuned model
+│   ├── output/              # Prediction results
+│   ├── EpiLingo_finetune.py # Fine-tuning the DNA/RNA modification site prediction model
+│   └── EpiLingo_predict.py  # prediction
+│
 ├── ptm/                    # PTM site prediction (based on ProteinBERT)
 │   ├── ptm_Arabidopsis_thaliana_phosphorylation.ipynb       # a demo to fine-tuning and predictions for PTMs
 │   ├── data/               # test data for PTM model train and predictions
