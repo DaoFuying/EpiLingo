@@ -414,6 +414,12 @@ If you use EpiLingo in your work, please cite the corresponding manuscript.
 
 ---
 
+## Acknowledgments
+
+This work was supported by the National Nature Scientific Foundation of China (62402089, 62671117, U24A20789), Sichuan Science and Technology Program (2025ZNSFSC1465), and Fundamental Research Funds for the Central Universities, all awarded to H.L (PI). This research is also supported by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award No: AISG3-GV-2023-014) and by the Ministry of Education, Singapore, under its Academic Research Fund Tier 1 (RG38/23), both awarded to M.J.F. (PI), as well as by the National Research Foundation, Singapore (NRF-PA2025-NTU; Award No. 026374-00004), awarded to F.D.
+
+---
+
 ## Contact
 
 For questions, bug reports, or collaboration interests, please open an issue or contact the authors.
